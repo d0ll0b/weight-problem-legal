@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>帳號與資料刪除 — 體重是個問題</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .meta { color: #6b7280; font-size: .9rem; margin-bottom: 2rem; }
+  ol li, ul li { margin: .35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { border: 1px solid #d1d5db; padding: .5rem .65rem; text-align: left; vertical-align: top; }
+  th { background: rgba(127,127,127,.12); }
+  .box { border-left: 4px solid #6b7280; padding: .25rem 0 .25rem 1rem; margin: 1.5rem 0; }
+  @media (max-width: 480px) {
+    thead { display: none; }
+    table, tbody, tr, td { display: block; width: 100%; }
+    tr { border: 1px solid #d1d5db; border-radius: 8px; margin-bottom: .85rem; }
+    td { border: none; border-bottom: 1px solid rgba(127,127,127,.25); }
+    tr td:last-child { border-bottom: none; }
+    td::before {
+      content: attr(data-label); display: block;
+      font-size: .72rem; letter-spacing: .04em; color: #6b7280; margin-bottom: .15rem;
+    }
+  }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #d1d5db; font-size: .9rem; color: #6b7280; }
+</style>
+</head>
+<body>
+
+<h1>帳號與資料刪除</h1>
+<p class="meta">
+  應用程式:體重是個問題(Weight Problem)｜
+  <code>com.weightproblem.weight_problem</code><br>
+  最後更新:2026 年 9 月 22 日
+</p>
+
+<p>
+  本頁說明如何刪除「體重是個問題」的帳號與相關資料。
+  本 App 沒有註冊流程,雲端備份以一組自動產生的<strong>匿名識別碼</strong>歸戶,
+  因此最快、也最完整的刪除方式是直接在 App 內操作。
+</p>
+
+<h2>方式一:在 App 內刪除(建議)</h2>
+<ol>
+  <li>開啟「體重是個問題」</li>
+  <li>點右上角的設定圖示</li>
+  <li>捲到「資料與隱私」</li>
+  <li>選擇你要的刪除範圍:</li>
+</ol>
+
+<table>
+  <thead>
+    <tr><th>選項</th><th>會刪除什麼</th><th>會保留什麼</th></tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td data-label="選項">清除這台裝置上的資料</td>
+    <td data-label="會刪除什麼">本機的訓練、體重、飲食、課表紀錄</td>
+    <td data-label="會保留什麼">雲端備份與帳號</td>
+  </tr>
+  <tr>
+    <td data-label="選項">刪除雲端資料</td>
+    <td data-label="會刪除什麼">雲端全部紀錄,並關閉同步</td>
+    <td data-label="會保留什麼">這台裝置上的資料</td>
+  </tr>
+  <tr>
+    <td data-label="選項"><strong>刪除帳號與所有資料</strong></td>
+    <td data-label="會刪除什麼">雲端全部紀錄 + 匿名帳號本身 + 本機全部紀錄</td>
+    <td data-label="會保留什麼">無(僅重新載入內建動作庫)</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="box">
+  選擇「刪除帳號與所有資料」後,刪除立即生效且無法復原,
+  App 也不會再自動建立新的匿名身分。
+</div>
+
+<h2>方式二:來信請求刪除</h2>
+<p>
+  若你已移除 App、裝置遺失或無法操作,請寄信到
+  <strong>[待填:聯絡信箱]</strong>,主旨寫「刪除我的資料」。
+</p>
+<p>
+  由於本 App 不收集姓名或電子郵件,我們<strong>無法僅憑來信信箱找到你的紀錄</strong>。
+  請在信中附上你的匿名識別碼(uid):在 App 的設定 →「雲端同步」該列會顯示前 8 碼。
+  若你已無法取得該識別碼,我們將無從辨識對應資料,也就無法代為刪除 ——
+  這種情況下,移除 App 即可清除裝置上的一切資料,雲端殘留的匿名紀錄
+  不含任何可識別你身分的資訊。
+</p>
+<p>
+  我們會在收到可辨識的請求後 <strong>30 天內</strong>完成刪除,並回信確認。
+</p>
+
+<h2>保存期間</h2>
+<p>
+  資料保存至你主動刪除為止,我們不會另行設定保存期限。
+  刪除為永久刪除,不保留備份副本(Google Cloud 基礎架構層級的暫時性備援除外,
+  該部分會依 Google 的排程自動清除)。
+</p>
+
+<h2>聯絡方式</h2>
+<p>
+  開發者:<strong>[待填:開發者名稱]</strong><br>
+  電子郵件:<strong>[待填:聯絡信箱]</strong><br>
+  另見<a href="index.html">隱私權政策</a>。
+</p>
+
+<footer>
+  體重是個問題 — 帳號與資料刪除說明｜最後更新 2026-09-22
+</footer>
+
+</body>
+</html>
